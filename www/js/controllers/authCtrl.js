@@ -28,7 +28,7 @@ angular.module('chery')
                         //$log.log(User.info);
                     }, function (err , status) {
                         $ionicLoading.hide();
-                        //navigator.notification.alert(err , "验证失败");
+                        navigator.notification.alert(err , "验证失败");
                         $log.error('HTTP error - status:', status, 'Error:', err);
                     });
             }

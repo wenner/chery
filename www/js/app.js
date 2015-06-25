@@ -12,7 +12,9 @@ angular.module('chery', [
 
     //run
     .run(function ($ionicPlatform, $rootScope, $state, $log, $timeout, $ionicPopup,
-                   ENV , Cache , Storage) {
+                   ENV , Cache , Storage , TasksService , User) {
+        User.loadStorage()
+        TasksService.getTasks();
         /*
         //下载缓存内容
         Cache.getFromRemote()
@@ -138,7 +140,8 @@ angular.module('chery', [
                 url: "/tasks" ,
                 views: {
                     tabTasks: {
-                        templateUrl:"views/tasks.html"
+                        templateUrl:"views/tasks.html" ,
+                        controller: "tasksCtrl"
                     }
                 }
             })

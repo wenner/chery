@@ -7,8 +7,8 @@ angular.module("chery.config", [])
         version: "1.2.1",
         name: "production",
         debug: !1,
-        api: "/ws/" ,
-        //api: "http://tbm.penavicotj.com/penavico/ws/"
+        //api: "/ws/" ,
+        api: "http://tbm.penavicotj.com/penavico/ws/"
         //api: "http://10.1.115.8:808/api/"
     })
     .constant('defaultSetting', {

@@ -4,22 +4,22 @@
     <list default="true" id="073ca038-e310-4745-aeab-cc0838daa0ea" name="Default" comment="" />
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435222271513" ignored="false" />
-    <file path="/a.dummy" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435177616984" ignored="false" />
-    <file path="/app.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435195541705" ignored="false" />
+    <file path="/index.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435263127541" ignored="false" />
+    <file path="/a.dummy" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435264999194" ignored="false" />
+    <file path="/app.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435265366867" ignored="false" />
     <file path="/welcome.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435142254168" ignored="false" />
     <file path="/login.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435250001442" ignored="false" />
     <file path="/plans.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435231385685" ignored="false" />
-    <file path="/tabs.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435208268947" ignored="false" />
-    <file path="/tasks.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435142902760" ignored="false" />
+    <file path="/tabs.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435264699829" ignored="false" />
+    <file path="/tasks.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435263168140" ignored="false" />
     <file path="/plansCtrl.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435202829907" ignored="false" />
     <file path="/plansService.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435204870290" ignored="false" />
     <file path="/unauthorizedInterceptor.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435157579073" ignored="false" />
     <file path="/authCtrl.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435250066854" ignored="false" />
-    <file path="/user.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435172827560" ignored="false" />
+    <file path="/user.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435265300780" ignored="false" />
     <file path="/config.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435176728150" ignored="false" />
     <file path="/planCtrl.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435261988521" ignored="false" />
-    <file path="/plan.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435262307663" ignored="false" />
+    <file path="/plan.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435264737141" ignored="false" />
     <file path="/style.css" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435259155476" ignored="false" />
     <file path="/planService.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435261384898" ignored="false" />
     <file path="/info.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435204473800" ignored="false" />
@@ -31,7 +31,10 @@
     <file path="/formatDate.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435227774147" ignored="false" />
     <file path="/commentModal.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435261006713" ignored="false" />
     <file path="/mediamenu.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435260599390" ignored="false" />
-    <file path="/setting.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435262387396" ignored="false" />
+    <file path="/setting.html" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435265340713" ignored="false" />
+    <file path="/tasksCtrl.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435264612997" ignored="false" />
+    <file path="/tasksService.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435264539990" ignored="false" />
+    <file path="/settingCtrl.js" changelist="073ca038-e310-4745-aeab-cc0838daa0ea" time="1435265203562" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,36 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="result.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/plan/result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="88" selection-start="1385" selection-end="1385" vertical-scroll-proportion="-22.344828">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="setting.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/setting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="30" selection-start="782" selection-end="782" vertical-scroll-proportion="-10.75862">
+            <state line="3" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="-2.4827585">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/plan/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="52" selection-start="442" selection-end="485" vertical-scroll-proportion="-9.931034">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#1;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +80,7 @@
       <file leaf-file-name="plan.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/plan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="85" selection-start="4551" selection-end="4551" vertical-scroll-proportion="-5.3448277">
+            <state line="12" column="21" selection-start="526" selection-end="526" vertical-scroll-proportion="-9.931034">
               <folding>
                 <element signature="n#style#0;n#span#0;n#h1#0;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#ion-item#0;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -128,10 +106,10 @@
       <file leaf-file-name="planCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/planCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="377" column="44" selection-start="15031" selection-end="15031" vertical-scroll-proportion="-5.814815">
+            <state line="113" column="53" selection-start="3654" selection-end="3667" vertical-scroll-proportion="-5.4444447">
               <folding>
                 <element signature="e#966#3449#0" expanded="false" />
-                <element signature="e#3612#3793#0" expanded="false" />
+                <element signature="e#3823#5936#0" expanded="false" />
                 <element signature="e#10154#11612#0" expanded="false" />
                 <marker date="1435261988810" expanded="true" signature="6871:6885" placeholder="..." />
                 <marker date="1435261988810" expanded="true" signature="6980:6991" placeholder="..." />
@@ -154,7 +132,7 @@
       <file leaf-file-name="planService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/services/planService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="24" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="185" selection-end="342" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,7 +141,43 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="10" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0">
+            <state line="15" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settingCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/settingCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="5" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasksCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/tasksCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="36" selection-start="449" selection-end="513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasksService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/services/tasksService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="41" selection-start="2398" selection-end="2398" vertical-scroll-proportion="-13.24138">
               <folding />
             </state>
           </provider>
@@ -172,8 +186,10 @@
       <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/services/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="596" selection-end="639" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="34" column="24" selection-start="1235" selection-end="1246" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#340#1220#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +197,7 @@
       <file leaf-file-name="plans.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/plans.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="24" selection-start="2933" selection-end="2992" vertical-scroll-proportion="-12.793103">
+            <state line="34" column="45" selection-start="0" selection-end="3372" vertical-scroll-proportion="-6.965517">
               <folding>
                 <element signature="n#style#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -202,10 +218,8 @@
       <file leaf-file-name="tabs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tabs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="tag#ion-tabs#0" expanded="false" />
-              </folding>
+            <state line="10" column="29" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.275862">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,7 +256,7 @@
       <file leaf-file-name="authCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllers/authCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="614" selection-end="678" vertical-scroll-proportion="0.0">
+            <state line="26" column="31" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -257,28 +271,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="41" selection-start="1226" selection-end="1226" vertical-scroll-proportion="-5.3448277">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tasks.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tasks.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="31" column="19" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-11.103448">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+            <state line="10" column="8" selection-start="260" selection-end="260" vertical-scroll-proportion="0.41379312">
               <folding />
             </state>
           </provider>
@@ -294,22 +301,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/plan/confirm.html" />
-        <option value="$PROJECT_DIR$/views/plan/detail.html" />
-        <option value="$PROJECT_DIR$/js/controllers/authCtrl.js" />
-        <option value="$PROJECT_DIR$/views/login.html" />
-        <option value="$PROJECT_DIR$/js/config.js" />
-        <option value="$PROJECT_DIR$/views/plan/arrange.html" />
-        <option value="$PROJECT_DIR$/views/plan/result.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/views/plan/mediamenu.html" />
         <option value="$PROJECT_DIR$/views/plan/commentModal.html" />
         <option value="$PROJECT_DIR$/js/services/planService.js" />
         <option value="$PROJECT_DIR$/js/controllers/planCtrl.js" />
         <option value="$PROJECT_DIR$/views/plans.html" />
-        <option value="$PROJECT_DIR$/views/plan.html" />
-        <option value="$PROJECT_DIR$/views/setting.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/views/tasks.html" />
+        <option value="$PROJECT_DIR$/js/controllers/tasksCtrl.js" />
+        <option value="$PROJECT_DIR$/views/tabs.html" />
+        <option value="$PROJECT_DIR$/views/plan.html" />
+        <option value="$PROJECT_DIR$/js/controllers/authCtrl.js" />
+        <option value="$PROJECT_DIR$/js/services/tasksService.js" />
+        <option value="$PROJECT_DIR$/js/controllers/settingCtrl.js" />
+        <option value="$PROJECT_DIR$/js/services/user.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/views/setting.html" />
+        <option value="$PROJECT_DIR$/js/config.js" />
       </list>
     </option>
   </component>
@@ -488,9 +495,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\mobile\chery\www\js\services" />
+      <recent name="F:\mobile\chery\www\js\controllers" />
       <recent name="F:\mobile\chery\www\views\plan" />
       <recent name="F:\mobile\chery\www\views" />
-      <recent name="F:\mobile\chery\www\js\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\mobile\chery\www\views" />
@@ -530,12 +538,12 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16393442" sideWeight="0.6701031" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16393442" sideWeight="0.6712565" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -615,30 +623,91 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="41" selection-start="2398" selection-end="2398" vertical-scroll-proportion="-13.24138">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/plans.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="45" selection-start="0" selection-end="3372" vertical-scroll-proportion="-6.965517">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="19" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-11.103448">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/planCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="53" selection-start="3654" selection-end="3667" vertical-scroll-proportion="-5.4444447">
+          <folding>
+            <element signature="e#966#3449#0" expanded="false" />
+            <element signature="e#3823#5936#0" expanded="false" />
+            <element signature="e#10154#11612#0" expanded="false" />
+            <marker date="1435261988810" expanded="true" signature="6871:6885" placeholder="..." />
+            <marker date="1435261988810" expanded="true" signature="6980:6991" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/services/planService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="185" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="408" selection-end="408" vertical-scroll-proportion="-8.275862">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/plan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="526" selection-end="526" vertical-scroll-proportion="-9.931034">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#h1#0;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#ion-item#0;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/authCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="614" selection-end="678" vertical-scroll-proportion="0.0">
+        <state line="26" column="31" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/plan/result.html">
+    <entry file="file://$PROJECT_DIR$/js/controllers/tasksCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="88" selection-start="1385" selection-end="1385" vertical-scroll-proportion="-22.344828">
+        <state line="11" column="36" selection-start="449" selection-end="513" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/plansCtrl.js">
+    <entry file="file://$PROJECT_DIR$/js/services/tasksService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="241" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="35" selection-start="3014" selection-end="3014" vertical-scroll-proportion="0.0">
+        <state line="2" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -657,108 +726,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/plansService.js">
+    <entry file="file://$PROJECT_DIR$/js/controllers/settingCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="25" selection-start="2464" selection-end="2464" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1097#2121#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="5" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/plan/confirm.html">
+    <entry file="file://$PROJECT_DIR$/js/services/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="0" selection-end="1557" vertical-scroll-proportion="-7.827586">
+        <state line="34" column="24" selection-start="1235" selection-end="1246" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#div#0;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#ng-switch#0;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#ng-switch#0;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#ng-switch#0;n#div#1;n#ion-item#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/plan/mediamenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="62" selection-start="367" selection-end="367" vertical-scroll-proportion="0.26086956">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/plan/commentModal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="208" selection-end="208" vertical-scroll-proportion="-2.4827585">
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#label#0;n#ion-list#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/services/planService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="24" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/planCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="44" selection-start="15031" selection-end="15031" vertical-scroll-proportion="-5.814815">
-          <folding>
-            <element signature="e#966#3449#0" expanded="false" />
-            <element signature="e#3612#3793#0" expanded="false" />
-            <element signature="e#10154#11612#0" expanded="false" />
-            <marker date="1435261988810" expanded="true" signature="6871:6885" placeholder="..." />
-            <marker date="1435261988810" expanded="true" signature="6980:6991" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/plans.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="24" selection-start="2933" selection-end="2992" vertical-scroll-proportion="-12.793103">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/plan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="85" selection-start="4551" selection-end="4551" vertical-scroll-proportion="-5.3448277">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h1#0;n#ion-header-bar#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#ion-item#0;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#ion-list#0;n#div#0;n#ion-content#0;n#ion-view#0;n#ion-tab#1;n#ion-tabs#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="e#340#1220#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/setting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="30" selection-start="782" selection-end="782" vertical-scroll-proportion="-10.75862">
+        <state line="3" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="-2.4827585">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/tasks.html">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+        <state line="15" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="260" selection-end="260" vertical-scroll-proportion="0.41379312">
           <folding />
         </state>
       </provider>

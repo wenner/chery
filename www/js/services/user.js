@@ -17,11 +17,11 @@ angular.module('chery.services')
             $http
                 .post(ENV.api + 'admin.asmx/CheckLogin', loginParams)
                 .success(function(result){
-
+                    console.log(result)
                     if (!result.isok){
                         defer.reject(result.message);
                     }else{
-                        user.info = result.data.emp;
+                        user.info = result.data.user.RowSet.R;
                         Storage.set("user" , user.info);
                         defer.resolve(user.info);
                     }
@@ -32,5 +32,9 @@ angular.module('chery.services')
                 });
             return defer.promise;
         };
+        user.loadStorage = function(){
+            user.info = Storage.get("user");
+        };
+
         return user;
     });
