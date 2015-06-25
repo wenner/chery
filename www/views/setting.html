@@ -1,0 +1,26 @@
+<ion-view view-title="设置">
+    <ion-content class="has-header">
+        <ion-list>
+
+            <!--个人信息-->
+            <ion-item class="item-divider">个人信息</ion-item>
+            <ion-item>
+                当前用户
+                <span class="item-note">{{User.name||'让你笑了'}}</span>
+            </ion-item>
+            <ion-item ng-click="logout()" style='color:red' class='item-icon-right'>
+                退出登录
+                <i class="icon ion-email"></i>
+            </ion-item>
+
+            <!--关于-->
+            <ion-item class="item-divider">关于</ion-item>
+            <ion-item>帮助</ion-item>
+            <ion-item>
+                检查更新<span class="item-note">当前版本: {{version}}</span>
+            </ion-item>
+            <ion-item>关于APP</ion-item>
+            <ion-item>天津外代货运公司</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,58 @@
+<ion-view view-title="{{detail.item.road}} {{detail.item.location}}">
+    <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button class='show'></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="has-header">
+        <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c">
+        </ion-refresher>
+        <div class="row topic">
+            <div class="col col90">
+                <h4 class="title">{{detail.item.district}} {{detail.item.road}} {{detail.item.location}}</h4>
+                <p>编号:{{detail.item.check_sn}}
+                <div class="topic-content" ng-bind-html="topic.content">
+                </div>
+            </div>
+        </div>
+        <ion-list class="replies">
+
+            <!--基本信息-->
+            <ion-item class="item-divider">基本信息</ion-item>
+            <ion-item>
+                类别<span class="item-note">{{detail.item.maintain_typename}}</span>
+            </ion-item>
+            <ion-item>
+                工程量
+                <span class="item-note">
+                {{detail.item.quantity}} (长: {{detail.item.length}} , 宽:{{detail.item.width}}
+                )</span>
+            </ion-item>
+            <ion-item>
+                计划金额<span class="item-note">{{detail.item.plan_money}}</span>
+            </ion-item>
+            <ion-item>
+                检查问题
+                <p>{{detail.item.check_description}}</p>
+            </ion-item>
+
+
+            <!--维修信息-->
+            <ion-item class="item-divider">维修信息</ion-item>
+            <ion-item ng-if="topic.replies.length == 0">
+            </ion-item>
+
+
+        </ion-list>
+        <br />
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-stable reply-new" keyboard-attach>
+        <div class="title buttons row">
+            <button class="button button-clear button-large col button-balanced"
+                    ng-click="hide(product, context, true)">
+                <i class='icon ion-wrench padding'></i>维修
+            </button>
+            <button class="button button-clear button-large col button-royal"
+                    ng-click="save(product, context, true)">
+                <i class='icon ion-clipboard padding'></i>验收</button>
+        </div>
+    </ion-footer-bar>
+</ion-view>

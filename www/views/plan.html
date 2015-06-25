@@ -1,0 +1,96 @@
+<ion-view hide-nav-bar="true">
+    <ion-header-bar class='bar-royal'>
+        <button class="button button-icon ion-ios-arrow-back pull-left"
+                ng-click="goBack()">
+        </button>
+        <h1 class='title'>
+            {{plan.batch_no || "发运计划"}} 信息
+            <span class="label label-positive" style="margin-bottom:5px">{{plan.status}}</span>
+        </h1>
+        <button class="button button-icon ion-ios-reload pull-right"
+                ng-click="loadPlan()">
+        </button>
+    </ion-header-bar>
+    <ion-tabs class="tabs-icon-top tabs-royal tabs-bottom has-header">
+        <!-- 过程节点 -->
+        <ion-tab title="过程节点"
+                 icon-off="ion-ios-barcode-outline" icon-on="ion-ios-barcode">
+            <ng-include src="'views/plan/result.html'"></ng-include>
+        </ion-tab>
+
+        <!-- 互动信息 -->
+        <ion-tab title="互动信息" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes">
+            <ion-view>
+                <ion-content class=" has-header">
+                    <div class='comments'>
+                        <ion-list class="list">
+                            <div ng-repeat="item in comments">
+                                <ion-item class="item-divider item-icon-right" ng-click="addComment(item)">
+                                    <span style="display:inline-block;width:25px;text-align:right">{{$index+1}}.</span>
+                                    {{item.name}}
+                                    <i class="icon ion-ios-plus-empty"></i>
+                                </ion-item>
+                                    <div ng-if="item.files.length > 0" style="font-size:12px;padding:5px 0 0 46px">
+                                        <span ng-repeat="file in item.files">{{file.files}}</span>
+                                    </div>
+                                    <div ng-if="item.children.length > 0" style="font-size:12px;padding:5px 0 0 46px">
+                                        <p ng-repeat="comment in item.children"
+                                           ng-click="reply(comment)"
+                                           ng-class="{true:'reply' , false:'comment'}[comment.parent_id != '0']">
+                                            <span style="color:blue;margin-right:5px ">
+                                                {{comment.create_emp_name}}<span ng-if="comment.parent_id !='0'" style='color:#999'>回复</span>:
+                                            </span>
+                                            {{comment.content}}
+                                            <span style="color:#ccc;display:inline-block;margin-left:10px">{{comment.create_time|formatDate:"M-D HH:mm"}}</span>
+                                        </p>
+                                    </div>
+                            </div>
+                        </ion-list>
+                    </div>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+
+        <!-- 费用 -->
+        <ion-tab title="费用" icon-off="ion-ios-calculator-outline" icon-on="ion-ios-calculator">
+            <ion-view>
+                <ion-content class=" has-header">
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+
+        <!-- 基本信息 -->
+        <ion-tab title="基本信息" icon-off="ion-ios-information-outline" icon-on="ion-ios-information">
+            <ion-view>
+                <ion-content>
+                    <ion-list>
+                        <ion-item>
+                            批次号<span class="item-note">{{plan.batch_no}}</span>
+                        </ion-item>
+                        <ion-item>
+                            状态<span class="item-note">{{plan.status}}</span>
+                        </ion-item>
+                        <ion-item>
+                            计划套数/箱量<span class="item-note">{{plan.plan_sets_count}}/{{plan.plan_boxs_count}}</span>
+                        </ion-item>
+                        <ion-item>
+                            已安排套数/箱量<span class="item-note">{{plan.arranged_sets_count}} / {{plan.arranged_boxs_count}}</span>
+                        </ion-item>
+                        <ion-item>
+                            运输模式<span class="item-note">{{plan.transport_name}}</span>
+                        </ion-item>
+                        <ion-item>
+                            航线<span class="item-note">{{plan.line_name}}</span>
+                        </ion-item>
+                        <ion-item>
+                            出运日期<span class="item-note">{{plan.export_date|formatDate}}</span>
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+
+
+
+    </ion-tabs>
+</ion-view>

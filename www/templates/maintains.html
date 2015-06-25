@@ -1,0 +1,45 @@
+<ion-view view-title="病害列表">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-search" ng-click="showNewTopicModal()" ng-disabled="loginName == null"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+
+        <ion-refresher ng-if="maintains.length > 0 || loadError" pulling-text="下拉刷新..." on-refresh="doRefresh()" refreshing-icon="ion-loading-c">
+        </ion-refresher>
+        <ion-list class="topics">
+            <ion-item class="item-avatar"
+                      collection-repeat="maintain in maintains"
+                      collection-item-width="'100%'"
+                      collection-item-height="73"
+                      href="#/maintain/{{maintain.id}}">
+
+                <img ng-src="{{topic.author.avatar_url}}" ng-if="!settings.saverMode" reset-img>
+
+                <h2>{{maintain.road}} {{maintain.location}} {{maintain.maintain_typename}}</h2>
+                <p class="summary">
+                    <span>{{maintain.status}}</span>
+                    <!--
+                    <span ng-if="!topic.top && !topic.good" class="tab">{{topic.tab}}</span>
+                    <span ng-if="topic.top" class="tab hl">置顶</span>
+                    <span ng-if="topic.good && !topic.top" class="tab hl">精华</span>
+                    {{topic.author.loginname}}
+                    -->
+                      <span class="item-note ago" am-time-ago="maintain.check_date">
+                      </span>
+                </p>
+                <ion-option-button class="button-balanced" ng-click="maintain(maintain)" ng-hide1="loginName == null">
+                    <i class='icon ion-wrench padding'></i>维修
+                </ion-option-button>
+                <ion-option-button class="button-royal" ng-click="check(maintain)" ng-hide1="loginName == null">
+                    <i class='icon ion-clipboard padding'></i>验收
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+        <!--
+          Loading icon of infinte-scroll not showing with collection-repeat
+          https://github.com/driftyco/ionic/issues/2376
+        -->
+        <ion-infinite-scroll on-infinite="loadMore()" distance="10%" icon="ion-loading-c" ng-if="hasNextPage && !loadError">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

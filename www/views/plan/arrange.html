@@ -1,0 +1,24 @@
+<ion-item ng-repeat="item in results"
+          ng-click="arrangePlan(item)"
+          ng-disabled="true"
+          ng-class="{'allowed':allowArrange(item) , 'complete':item.status != '待安排'}"
+          class="item-icon-right arrange">
+    <div>
+        <span style="display:inline-block;width:25px;text-align:right">{{$index+1}}.</span>
+        <span style="font-weight:bold">{{item.name}}</span>
+        <span style="float:right;font-size1:12px;line-height:45px">
+            <span>{{(item.plan_date|formatDate:"计划: YYYY-MM-DD") || "--"}}</span>
+        </span>
+    </div>
+
+    <div style="font-size:12px;padding:5px 0 0 30px">
+        <span>{{item.duty_lvl1_name}}</span>
+    </div>
+    <ng-switch on="item.status">
+        <i ng-switch-when="待审核" class="icon ion-checkmark"></i>
+        <i ng-switch-when="待安排" class="icon"
+           ng-class="{true:'ion-checkmark-circled' , false:'ion-clock'}[allowArrange(item)]"></i>
+    </ng-switch>
+
+</ion-item>
+

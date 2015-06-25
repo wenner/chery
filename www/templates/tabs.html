@@ -1,0 +1,32 @@
+<ion-tabs class="tabs-icon-top tabs-positive">
+
+    <!-- 病害 -->
+    <ion-tab title="病害列表" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong"
+             ui-sref=tab.maintains>
+        <ion-nav-view name="tabMaintains" class="slide-left-right"></ion-nav-view>
+    </ion-tab>
+
+    <!-- 附近 -->
+    <ion-tab title="附近病害" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes"
+             ui-sref=tab.near>
+        <ion-nav-view name="tabNear" class="slide-left-right"></ion-nav-view>
+    </ion-tab>
+
+    <!-- 新增 -->
+    <ion-tab title="新增案件" icon-off="ion-plus" icon-on="ion-plus"
+             class="button-dark" nav-transition="ios"
+            ng-click='showNew()'>
+    </ion-tab>
+
+    <!-- 地图浏览 -->
+    <ion-tab title="地图浏览" icon-off="ion-map" icon-on="ion-map"
+             href="#/map">
+        <ion-nav-view name="tabMap" class="slide-left-right"></ion-nav-view>
+    </ion-tab>
+
+    <!-- 设置 -->
+    <ion-tab title="设置" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear"
+             href="#/setting">
+        <ion-nav-view name="tabSetting" class="slide-left-right"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

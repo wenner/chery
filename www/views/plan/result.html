@@ -1,0 +1,33 @@
+<ion-view>
+    <ion-content class=" has-header">
+        <div class="text-center padding"
+             ng-if="isResultLoading">
+            <ion-spinner></ion-spinner>
+            <p>加载中...</p>
+        </div>
+        <div class="planresult">
+                <ng-switch on="plan.status">
+                    <div ng-switch-when="已完成">
+                        <ng-include src="'views/plan/detail.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="安排中">
+                        <ng-include src="'views/plan/arrange.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="待安排">
+                        <ng-include src="'views/plan/arrange.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="待审核">
+                        <ng-include src="'views/plan/approve.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="待执行">
+                        <ng-include src="'views/plan/confirm.html'"></ng-include>
+                    </div>
+                    <div ng-switch-when="执行中">
+                        <ng-include src="'views/plan/confirm.html'"></ng-include>
+                    </div>
+                </ng-switch>
+        </div>
+    </ion-content>
+</ion-view>
+<button class="button-float button-float-right button button-assertive icon ion-soup-can"
+        ng-click="saveResult(plan)"></button>

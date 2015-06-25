@@ -1,0 +1,25 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <button class="button button-icon button-positive1 button-clear ion-ios-close-outline pull-left"
+                ng-click='hideCommentModal()'></button>
+        <h1 class="title">发布信息</h1>
+        <button class="button button-icon icon ion-ios-checkmark-outline"
+                ng-click="saveComment()">立即发布
+        </button>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-divider item-icon-right" ng-click="addComment(item)">
+                信息
+            </ion-item>
+            <label class='item item-input item-stacked-label'>
+                <textarea placeholder="请在这里填写内容" style="height:100px"
+                        ng-model="currentValues.comment"></textarea>
+            </label>
+            <ion-item class="item-divider item-icon-right" ng-click="addMedia($event)">
+                添加文件
+                <i class="icon ion-ios-plus-empty"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-modal-view>

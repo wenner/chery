@@ -1,0 +1,41 @@
+<ion-item ng-repeat="item in results"
+          ng-click="confirmPlan(item)"
+          ng-disabled="true"
+          ng-class="{'allowed':allowConfirm(item) , 'complete':item.status == '已完成'}"
+          class="item-icon-right confirm">
+
+    <div>
+        <span style="display:inline-block;width:25px;text-align:right">{{$index+1}}.</span>
+        <span style="font-weight:bold">{{item.name}}</span>
+        <span style="float:right;font-size:12px">
+            计划: {{item.plan_date|formatDate:"YY-MM-DD"}}
+        </span>
+    </div>
+
+    <div style="font-size:12px;padding:5px 0 0 30px">
+        <span>{{item.duty_lvl1_name}}</span>
+
+        <ng-switch on="item.status">
+            <span ng-switch-when="已完成"
+                  class='text-right'
+                  ng-class="{'isdelay':item.isdelay}"
+                  style="float:right;">
+                确认: {{item.complete_date|formatDate:"YY-MM-DD"}}<br>
+                <span ng-if="item.isdelay" style='color:#999'>{{item.confirm_memo}}</span>
+            </span>
+
+            <span ng-switch-default
+                  ng-if="item.timediff != 0 && item.plan_status == '执行中' "
+                  style="float:right;color:blue">
+                调整: {{item.roll_date1|formatDate:"YY-MM-DD"}}
+            </span>
+
+        </ng-switch>
+    </div>
+    <ng-switch on="item.status">
+        <i ng-switch-when="已完成" class="icon ion-checkmark"></i>
+        <i ng-switch-when="待确认" class="icon" ng-class="{true:'ion-checkmark-circled' , false:'ion-clock'}[allowConfirm(item)]"></i>
+    </ng-switch>
+
+</ion-item>
+

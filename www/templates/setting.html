@@ -1,0 +1,54 @@
+<ion-view view-title="设置">
+    <ion-content class="has-header">
+        <ion-list>
+
+            <!--个人信息-->
+            <ion-item class="item-divider">个人信息</ion-item>
+            <ion-item>
+                当前用户
+                <span class="item-note">{{User.name||'让你笑了'}}</span>
+            </ion-item>
+            <ion-item ng-click="logout()" style='color:red' class='item-icon-right'>
+                退出登录
+                <i class="icon ion-email"></i>
+            </ion-item>
+
+            <!--个人设置-->
+            <ion-item class="item-divider">个人设置</ion-item>
+            <ion-toggle>sfasdfsf</ion-toggle>
+            <ion-item class="item-toggle">
+                小尾巴
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-checked="settings.sendFrom" ng-model="settings.sendFrom">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+            <ion-item class='item-button-right'>
+                省流量
+                <button class="button button-positive">
+                    <i class="icon ion-ios-telephone"></i>
+                </button>
+            </ion-item>
+            <label class='item-input item-select'>
+                    <div class="input-label">
+                        显示
+                    </div>
+                    <select>
+                        <option>100条</option>
+                        <option selected>Green</option>
+                        <option>Red</option>
+                    </select>
+            </label>
+            <!--关于-->
+            <ion-item class="item-divider">关于</ion-item>
+            <ion-item>帮助</ion-item>
+            <ion-item>
+                检查更新<span class="item-note">当前版本: {{version}}</span>
+            </ion-item>
+            <ion-item>关于APP</ion-item>
+            <ion-item>关于天津容数</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

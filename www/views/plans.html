@@ -1,0 +1,75 @@
+<ion-view view-title="发运计划列表">
+    <div class="bar bar-subheader bar-stable row" style='padding:0'>
+        <div class="col item-input">
+            <input type="date" class="text-center" placeholder="开始日期" ng-model="condition.startdate">
+        </div>
+        <div class="col item-input">
+            <input type="date" class="text-center" placeholder="结束日期" ng-model="condition.enddate">
+        </div>
+    </div>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios-search"
+                ng-click="showNewTopicModal()"
+                ng-disabled="loginName == null"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-subheader">
+        <div class="text-center padding"
+             ng-if="isLoading">
+            <ion-spinner></ion-spinner>
+            <p>加载中...</p>
+        </div>
+        <ion-refresher ng-if="plans.length > 0 || !isLoading"
+                       pulling-text="下拉刷新..."
+                       on-refresh="doRefresh()">
+        </ion-refresher>
+        <ion-list class="plans">
+            <ion-item class="item-avatar"
+                      collection-repeat="plan in plans"
+                      collection-item-width="'100%'"
+                      collection-item-height="73"
+                      href="#/plan/{{plan.qp_id}}">
+                <!--
+
+                <R approve_time="2014-08-07 15:38:51" complete_emp="0"
+                   complete_time="0-00-00 00:00:00" approve_emp="529"
+                   transport="14472" transport_name="空进重出"
+                   arranged_boxs_count="0" timediff="2"
+                   modify_time="0-00-00 00:00:00" line="14475"
+                   plan_boxs_count="28" qp_id="63" create_emp="529"
+                   line_name="伊航" create_time="2014-08-07 09:31:33"
+                   arranged_sets_count="0" template_name="测试1"
+                   plan_sets_count="240" status="执行中" modify_emp="0"
+                   create_emp_name="奇瑞国际部1" batch_no="A13FL-7-1"
+                   modify_memo="" export_date="2015-06-26 00:00:00" />
+
+                -->
+                <img ng-src="img/{{plan.line_name == 'ZIM' ? 'zim.png' : 'hds.png'}}"
+                     ng-if="!settings.saverMode" reset-img
+                     style="border-radius:0;opacity:.8">
+                <span class="title">
+                    {{plan.batch_no}}
+                </span>
+                <span class="label label-positive">{{plan.status}}</span>
+                <span class="label label-default">{{plan.transport_name.substring(0,2)}}</span>
+                <!--
+                <span class="label label-positive text-center" style="width:15px;height:15px;background:red;border-radius:50%;margin-top:3px"></span>
+                -->
+
+
+                <p class="summary">
+                    出运: {{plan.export_date.split(" ")[0]}}  ,
+                    计划: {{plan.plan_sets_count}}/{{plan.plan_boxs_count}} ,
+                    安排: {{plan.arranged_sets_count}} / {{plan.arranged_boxs_count}}
+                </p>
+            </ion-item>
+        </ion-list>
+        <!--
+          Loading icon of infinte-scroll not showing with collection-repeat
+          https://github.com/driftyco/ionic/issues/2376
+        -->
+        <!--
+        <ion-infinite-scroll on-infinite="loadMore()" distance="10%">
+        </ion-infinite-scroll>
+        -->
+    </ion-content>
+</ion-view>

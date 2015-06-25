@@ -1,0 +1,21 @@
+{
+  "name": "roadbridge",
+  "app_id": "",
+  "browsers": [
+    {
+      "platform": "android",
+      "browser": "crosswalk",
+      "version": "12.41.296.5"
+    }
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ] , 
+    "proxies": [
+    {
+      "path": "/ws/",
+      "proxyUrl": "http://tbm.penavicotj.com/penavico/ws/"
+    }
+  ]
+}

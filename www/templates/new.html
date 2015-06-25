@@ -1,0 +1,161 @@
+<ion-view view-title='巡查上报'>
+    <ion-header-bar class=bar-balanced>
+        <div class=buttons>
+            <button class="button button-clear button-light"
+                    ng-click=hideNewModal()>
+                <i class="icon ion-close-circled"></i>
+            </button>
+        </div>
+        <h1 class=title>巡查上报</h1>
+        <div class=buttons>
+            <button class="button button-clear"
+                    ng-disabled=maintainform.$invalid
+                    ng-click=save(maintain)>
+                <i class="icon ion-checkmark-circled"></i> 保存
+            </button>
+        </div>
+    </ion-header-bar>
+    <form name="maintainform" novalidate>
+    <!--
+    <ion-header-bar class="bar-positive">
+        <button class="button button-clear button-assertive" ng-click='cancel()'>取消</button>
+        <h1 class="title">巡查上报</h1>
+    </ion-header-bar>
+    -->
+    <ion-tabs class="tabs-striped tabs-top tabs-background-light tabs-color-positive">
+        <!-- 病害 -->
+        <ion-tab title="基本信息">
+            <ion-view>
+                <ion-content>
+                        <input type="hidden" name='type' ng-model='maintain.type' value='养护单位检查记录'/>
+
+                        <div class='list list-inset1'>
+                            <label class='item item-input'>
+                                <span class='input-label'>检查日期</span>
+                                <input type='date' name='check_date' ng-model='maintain.check_date'>
+                            </label>
+                            <ion-item class="item-divider">位置信息</ion-item>
+                            <div class='row item col-input'>
+                                <div class='col col-20 single-select'>
+                                    <select class='simpleselect'
+                                            ng-model='maintain.district'
+                                            ng-options="key as key for (key,value) in roadSections"
+                                            required>
+                                        label for ( key , value ) in object
+                                        <option value=''>选择区域</option>
+                                    </select>
+                                </div>
+                                <div class='col col-25 single-select'>
+                                    <select
+                                            ng-model='maintain.road'
+                                            ng-options='key as key for (key,value) in roadSections[maintain.district]'
+                                            required>
+                                        <option value=''>选择道路</option>
+                                    </select>
+                                </div>
+                                <div class='col single-select'>
+                                    <select
+                                            ng-model='maintain.section'
+                                            ng-options='value for value in roadSections[maintain.district][maintain.road]'
+                                            required>
+                                        <option value=''>选择路段</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class='row item col-input'>
+                                <div class='col col-20 single-select'>
+                                    <select
+                                            name='direction'
+                                            ng-model='maintain.direction'
+                                            required>
+                                        <option value=''>选择方向</option>
+                                        <option>向南</option>
+                                        <option>向东</option>
+                                    </select>
+                                </div>
+                                <div class='col col-25 single-select'>
+                                    <select
+                                            name='side'
+                                            ng-model='maintain.side'
+                                            required>
+                                        <option>东侧</option>
+                                        <option>西侧</option>
+                                        <option>南侧</option>
+                                        <option>北侧</option>
+                                    </select>
+                                </div>
+                                <label class='col' style='padding:0'>
+                                    <input type='number' placeholder='输入距离'
+                                           ng-model='maintain.distance'
+                                           required> 米
+                                </label>
+                            </div>
+                            <ion-item class="item-divider">维修信息</ion-item>
+
+                            <label class="item item-input item-select">
+                                <span class="input-label">维修类别:</span>
+                                <select name="maintain_type"
+                                        ng-model='maintain.maintain_type'
+                                        ng-options='t.id as t.name group by t.parentname for t in maintainTypes'
+                                        required>
+                                    <option value="">请选择区域</option>
+                                </select>
+                            </label>
+                            <label class="item item-input">
+                                <span class='input-label'>工作量:</span>
+                                <input type='text' ng-model="maintain.quantity" required>
+                            </label>
+                            <label class="item item-input item-stacked-label1">
+                                <span class="input-label">破损情况:</span>
+                                <input type="text" name='check_description'
+                                       ng-model='maintain.check_description'>
+                            </label>
+                            <label class="item item-input item-stacked-label1">
+                                <span class="input-label">备注: {{maintainform.$invalid}}</span>
+                                <input type="text" name='memo'
+                                       ng-model='maintain.memo'>
+                            </label>
+                        </div>
+                    {{maintain}} <br> {{maintainform.$invalid}}
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+        <!-- 附近 -->
+        <ion-tab title="现场图片">
+            <ion-view>
+                <ion-content>
+                    <ul class="imageuploader">
+                        <li>
+                            <label>
+                                <img src="http://sta.ganjistatic1.com/src/image/mobile/touch/milan/pub/upimg.png"
+                                     alt=""
+                                     ng-click='showPicker();console.log(222222222)'>
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <img src="http://sta.ganjistatic1.com/src/image/mobile/touch/milan/pub/upimg.png"
+                                     alt=""><input type='file'></label>
+                        </li>
+                        <li>
+                            <label>
+                                <img src="http://sta.ganjistatic1.com/src/image/mobile/touch/milan/pub/upimg.png"
+                                     alt=""><input type='file'></label>
+                        </li>
+                        <li>
+                            <label>
+                                <img src="http://sta.ganjistatic1.com/src/image/mobile/touch/milan/pub/upimg.png"
+                                     alt=""><input type='file'></label>
+                        </li>
+                    </ul>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+    </ion-tabs>
+    <ion-footer-bar>
+        <button class='button button-large  button-positive' ng-disabled=maintainform.$invalid>提交</button>
+    </ion-footer-bar>
+    </form>
+
+</ion-view>
