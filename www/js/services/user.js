@@ -33,7 +33,7 @@ angular.module('chery.services')
             return defer.promise;
         };
         user.loadStorage = function(){
-            user.info = Storage.get("user");
+            if (Storage.exists("user")) user.info = Storage.get("user");
         };
 
         return user;

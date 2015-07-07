@@ -7,6 +7,14 @@
                 当前用户
                 <span class="item-note">{{user.fullname}}</span>
             </ion-item>
+            <label class='item item-input item-select'>
+                <span class="input-label">切换访问地址</span>
+                <select ng-change="changeApiUrl()" ng-model="apis.type">
+                    <option value="penavico">内部网络(在外代楼内)</option>
+                    <option value="internet">外部网络</option>
+                    <option value="ionicproxy">开发测试代理</option>
+                </select>
+            </label>
             <ion-item ng-click="logout()" style='color:red' class='item-icon-right'>
                 退出登录
                 <i class="icon ion-email"></i>

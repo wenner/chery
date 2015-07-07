@@ -1,13 +1,20 @@
 angular.module('chery')
-    .controller('AuthCtrl', function ($scope, $rootScope, $state, $log, $timeout, $ionicLoading , User , Storage) {
+    .controller('AuthCtrl', function ($scope, $rootScope, $state, $log,
+                                      $timeout, $ionicLoading ,
+                                      ENV , User , Storage) {
         angular.extend($scope , {
             user: {password:111} ,
+            apis: {type:ENV.apiType} ,
             users: [
                 {name:'王翔宇' , code:'wangxiangyu'} ,
                 {name:'奇瑞国际部' , code:'chery-gj'} ,
                 {name:'奇瑞生产部' , code:'chery-sc'} ,
                 {name:'芜湖外代' , code:'whwd'}
             ] ,
+            changeApiUrl: function(){
+                ENV.changeApiType($scope.apis.type);
+            } ,
+
             login: function () {
                 var name = this.user.name ,
                     password = this.user.password;

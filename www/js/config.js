@@ -7,9 +7,12 @@ angular.module("chery.config", [])
         version: "1.2.1",
         name: "production",
         debug: !1,
-        //api: "/ws/" ,
-        api: "http://tbm.penavicotj.com/penavico/ws/"
-        //api: "http://10.1.115.8:808/api/"
+        apiType: "penavico" ,
+        apiUrls:{
+            ionicproxy: "/ws/" ,
+            penavico: "http://10.128.60.49/penavico/ws/" ,
+            internet: "http://tbm.penavicotj.com/penavico/ws/"
+        }
     })
     .constant('defaultSetting', {
         sendFrom: true,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.tjxrs.chery" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.penavicotj.chery" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Chery</name>
   <description>
         PenavicoTJ Chery Project App
     </description>
   <author email="wenner.cn@gmail.com">
-        Ionic Framework Team
+        Wenner
     </author>
   <content src="index.html"/>
   <access origin="*" subdomains="true" launch-external="yes"/>

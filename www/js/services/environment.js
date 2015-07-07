@@ -4,9 +4,22 @@ angular.module('chery.services')
         var configKey = 'config' ,
             configs = Storage.set(configKey) || defaultConfig ,
             settingKey = 'settings' ,
-            settings = Storage.get(settingKey) || defaultSetting;
+            settings = Storage.get(settingKey) || defaultSetting ,
+            apiUrl;
         return {
-            api: configs.api ,
+            api: apiUrl ,
+            getApi: function(){
+                var apiType = Storage.get("apiType" , true);
+                if (!apiType) apiType = configs.apiType;
+                this.apiType = apiType;
+                apiUrl = configs.apiUrls[apiType];
+                this.api = apiUrl;
+                console.log(this.apiType ,this.api)
+            } ,
+            changeApiType: function(type){
+                Storage.set("apiType" , type , true);
+                this.getApi();
+            } ,
             getSettings: function () {
                 $log.debug('get settings', settings);
                 return settings;

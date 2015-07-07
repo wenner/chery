@@ -13,6 +13,7 @@ angular.module('chery', [
     //run
     .run(function ($ionicPlatform, $rootScope, $state, $log, $timeout, $ionicPopup,
                    ENV , Cache , Storage , TasksService , User) {
+        ENV.getApi();
         User.loadStorage()
         TasksService.getTasks();
         /*

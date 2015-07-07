@@ -6,11 +6,12 @@ angular
             exists: function(key){
                 return !!window.localStorage.getItem(key);
             } ,
-            set: function (key, data) {
-                return window.localStorage.setItem(key, window.JSON.stringify(data));
+            set: function (key, data , isString) {
+                return window.localStorage.setItem(key, isString === true ? data : window.JSON.stringify(data));
             },
-            get: function (key) {
-                return window.JSON.parse(window.localStorage.getItem(key));
+            get: function (key , isString) {
+                var item = window.localStorage.getItem(key);
+                return isString === true ? item : (item ? window.JSON.parse(item) : {});
             },
             remove: function (key) {
                 return window.localStorage.removeItem(key);

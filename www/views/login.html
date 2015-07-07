@@ -1,10 +1,10 @@
 <ion-view view-title="用户登录">
 
     <ion-content class="padding">
-        <div style="height:100px">&nbsp;</div>
+        <div style="height1:100px">&nbsp;</div>
         <form name="loginForm" novalidate>
         <div class="list list-inset">
-            <ion-item class='item-divider'>快捷用户</ion-item>
+            <ion-item class='item-divider'>快捷用户(点击选择)</ion-item>
             <ion-radio ng-repeat="item in users"
                        ng-value="item.code"
                        ng-model="user.name">
@@ -31,6 +31,14 @@
                        autocapitalize="off"
                        ng-class="{'submission-opacity':auth.submitted}"
                        required>
+            </label>
+            <label class='item item-input item-select'>
+                <span class="input-label">切换访问地址</span>
+                <select ng-change="changeApiUrl()" ng-model="apis.type">
+                    <option value="penavico">内部网络(在外代楼内)</option>
+                    <option value="internet">外部网络</option>
+                    <option value="ionicproxy">开发测试代理</option>
+                </select>
             </label>
         </div>
         <button type="button"
