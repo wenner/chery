@@ -7,7 +7,7 @@ angular.module("chery.config", [])
         version: "1.2.1",
         name: "production",
         debug: !1,
-        apiType: "penavico" ,
+        apiType: "internet" ,
         apiUrls:{
             ionicproxy: "/ws/" ,
             penavico: "http://10.128.60.49/penavico/ws/" ,
